@@ -1,0 +1,60 @@
+---
+# defaults file for bas-web-applications-team
+
+# system-users specific variables
+web_application_team_users:
+  -
+    username: app
+    comment: Generic user account for performing day-to-day or unprivileged actions
+    shell: /bin/bash
+    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
+    authorized_keys_files:
+      - "dacon.pub"
+      - "felnne.pub"
+      - "robike.pub"
+      - "jpro.pub"
+    state: present
+  -
+    username: dacon
+    comment: Privileged user account for 'dacon' (David Connor)
+    shell: /bin/bash
+    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
+    authorized_keys_files:
+      - "dacon.pub"
+    secondary_groups:
+          - adm
+    sudo: true
+    state: present
+  -
+    username: felnne
+    comment: Privileged user account for 'felnne' (Felix Fennell)
+    shell: /bin/bash
+    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
+    authorized_keys_files:
+      - "felnne.pub"
+    secondary_groups:
+      - adm
+    sudo: true
+    state: present
+  -
+    username: robike
+    comment: Privileged user account for 'robike' (Rob Aiken)
+    shell: /bin/bash
+    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
+    authorized_keys_files:
+      - "robike.pub"
+    secondary_groups:
+      - adm
+    sudo: true
+    state: present
+  -
+    username: jpro
+    comment: Privileged user account for 'jpro' (Jeremy Robst)
+    shell: /bin/bash
+    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
+    authorized_keys_files:
+      - "jpro.pub"
+    secondary_groups:
+      - adm
+    sudo: true
+    state: present

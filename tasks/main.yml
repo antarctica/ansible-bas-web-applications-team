@@ -1,0 +1,4 @@
+---
+# tasks file for bas-web-applications-team
+
+- include: utilities.yml

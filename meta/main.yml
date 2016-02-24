@@ -1,0 +1,24 @@
+---
+galaxy_info:
+  author: Felix Fennell
+  description: Configures a machine with BAS Web & Applications Team specific conventions
+  company: British Antarctic Survey
+
+  issue_tracker_url: https://jira.ceh.ac.uk/browse/WSF
+  license: MIT
+  min_ansible_version: 1.8
+
+  platforms:
+  - name: EL
+    versions:
+      - 7
+  - name: Ubuntu
+    versions:
+      - trusty
+
+  categories:
+  - system
+
+dependencies:
+  - antarctica.bas-motd
+  - { role: "bas-ansible-roles-collection.system-users", system_users_users: "{{ web_application_team_users }}"}
