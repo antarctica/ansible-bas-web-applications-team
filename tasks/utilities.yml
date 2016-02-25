@@ -29,5 +29,5 @@
                state=present
   with_items:
     - htop
-  when: ansible_distribution == "CentOS" and
+  when: ansible_distribution == "Ubuntu" and
     ansible_local.bas_systems_inventory.system_instance.environment != "production"
