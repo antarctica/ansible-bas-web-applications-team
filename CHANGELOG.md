@@ -5,6 +5,12 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased][unreleased]
 
+## 0.1.2 - 25/02/2016
+
+### Fixed
+
+* Broken 'when' condition for installing Htop on Ubuntu
+
 ## 0.1.1 - 25/02/2016
 
 ### Fixed
