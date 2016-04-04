@@ -12,6 +12,7 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+* Using consistent format for role dependencies
 * Refactoring 'utilities' tasks
 ## 0.1.2 - 25/02/2016
 
