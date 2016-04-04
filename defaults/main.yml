@@ -19,7 +19,7 @@ web_application_team_users:
     username: app
     comment: Generic user account for performing day-to-day or unprivileged actions
     shell: /bin/bash
-    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
+    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/HOME/DOT-ssh/authorized-keys
     authorized_keys_files:
       - "dacon.pub"
       - "felnne.pub"
@@ -30,7 +30,7 @@ web_application_team_users:
     username: dacon
     comment: Privileged user account for 'dacon' (David Connor)
     shell: /bin/bash
-    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
+    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/HOME/DOT-ssh/authorized-keys
     authorized_keys_files:
       - "dacon.pub"
     primary_group: webapps
@@ -42,7 +42,7 @@ web_application_team_users:
     username: felnne
     comment: Privileged user account for 'felnne' (Felix Fennell)
     shell: /bin/bash
-    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
+    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/HOME/DOT-ssh/authorized-keys
     authorized_keys_files:
       - "felnne.pub"
     primary_group: webapps
@@ -54,7 +54,7 @@ web_application_team_users:
     username: robike
     comment: Privileged user account for 'robike' (Rob Aiken)
     shell: /bin/bash
-    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
+    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/HOME/DOT-ssh/authorized-keys
     authorized_keys_files:
       - "robike.pub"
     primary_group: webapps
@@ -66,7 +66,7 @@ web_application_team_users:
     username: jpro
     comment: Privileged user account for 'jpro' (Jeremy Robst)
     shell: /bin/bash
-    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
+    authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/HOME/DOT-ssh/authorized-keys
     authorized_keys_files:
       - "jpro.pub"
     primary_group: webapps
