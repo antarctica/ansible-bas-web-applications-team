@@ -21,6 +21,7 @@ and [here](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt
 * Creates privileged user accounts for Web & Application Team members, and Jeremy Robst from BAS ICT
 * In non-production environments, installs the htop process viewer
 * Records key identifiers about the associated Compute Resource and System Instance as Ansible local facts
+* Create a group for team members to allow permission sharing
 * In non-production environments, installs the `rsync` file transfer tool for uploading files
 * In non-production environments, installs the `nano` editor and additional language syntax highlighting files
 * If the BARC `postgresql9-server` role is applied, creates privileged roles for team members
@@ -30,6 +31,8 @@ and [here](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt
 
 * [**bas-ansible-roles-collection.system-users**](https://galaxy.ansible.com/bas-ansible-roles-collection/system-users/)
   * Minimum version: *1.0.0*
+* [**bas-ansible-roles-collection.system-groups**](https://galaxy.ansible.com/bas-ansible-roles-collection/system-groups/)
+  * Minimum version: *0.1.0*
 * [**antarctica.bas-motd**](https://galaxy.ansible.com/antarctica/bas-motd/)
   * Minimum version: *0.2.0*
 
@@ -90,6 +93,12 @@ Tags are not used in this role.
 
 * **MUST NOT** be specified
 * Specifies the members of the Web & Applications Team
+* The default value for this variable is a conventional default and **MUST NOT** be changed
+
+#### *web_application_team_groups*
+
+* **MUST NOT** be specified
+* Specifies the group used for members of the Web & Applications Team
 * The default value for this variable is a conventional default and **MUST NOT** be changed
 
 ## Developing

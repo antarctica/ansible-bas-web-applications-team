@@ -8,6 +8,11 @@ web_application_team_usernames:
   - robike
   - jpro
 
+# system-groups specific variables
+web_application_team_groups:
+  -
+    name: webapps
+
 # system-users specific variables
 web_application_team_users:
   -
@@ -28,8 +33,9 @@ web_application_team_users:
     authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
     authorized_keys_files:
       - "dacon.pub"
+    primary_group: webapps
     secondary_groups:
-          - adm
+      - adm
     sudo: true
     state: present
   -
@@ -39,6 +45,7 @@ web_application_team_users:
     authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
     authorized_keys_files:
       - "felnne.pub"
+    primary_group: webapps
     secondary_groups:
       - adm
     sudo: true
@@ -50,6 +57,7 @@ web_application_team_users:
     authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
     authorized_keys_files:
       - "robike.pub"
+    primary_group: webapps
     secondary_groups:
       - adm
     sudo: true
@@ -61,6 +69,7 @@ web_application_team_users:
     authorized_keys_directory: ../../antarctica.bas-web-applications-team/files/public-keys
     authorized_keys_files:
       - "jpro.pub"
+    primary_group: webapps
     secondary_groups:
       - adm
     sudo: true

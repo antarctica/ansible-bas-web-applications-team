@@ -21,4 +21,5 @@ galaxy_info:
 
 dependencies:
   - { role: "antarctica.bas-motd" }
+  - { role: "bas-ansible-roles-collection.system-groups", system_groups_groups: "{{ web_application_team_groups }}" }
   - { role: "bas-ansible-roles-collection.system-users", system_users_users: "{{ web_application_team_users }}" }
