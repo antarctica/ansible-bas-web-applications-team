@@ -9,3 +9,21 @@
   with_items:
   - nano
   when: ansible_distribution == "CentOS"
+
+- name: generate nano configuration file for web apps users
+  template:
+      src=HOME/DOT-nanorc.j2
+     dest="/home/{{ item }}/.nanorc"
+    owner="{{ item }}"
+    group="{{ item }}"
+  with_items: "{{ web_application_team_usernames }}"
+
+- name: ensure syntax directory exists for nano syntax definitions
+  file:
+    path=/usr/local/share/nano/syntax
+    state=directory
+
+- name: sync nano syntax definitions
+  synchronize:
+    src=usr/local/share/nano/syntax/
+    dest=/usr/local/share/nano/syntax

@@ -9,6 +9,8 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 * Customisations for the `postgresql9-server` role, if applied, to create superusers for team members
 * Customisations for the `postgresql9-client` role, if applied, to customise `psql` client
+* Additional nano text editor syntax definitions
+* Rsync is now installed as a utility on CentOS to support copying nano syntax definitions
 
 ### Changed
 

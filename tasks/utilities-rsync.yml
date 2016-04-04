@@ -1,0 +1,11 @@
+---
+# Installs rsync file transfer utility on non-production environments
+
+- name: install rsync - CentOS
+  yum:
+             pkg={{ item }}
+    update_cache=yes
+           state=present
+  with_items:
+  - rsync
+  when: ansible_distribution == "CentOS"

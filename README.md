@@ -19,9 +19,10 @@ and [here](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt
 ## Overview
 
 * Creates privileged user accounts for Web & Application Team members, and Jeremy Robst from BAS ICT
-* In non-production environments, installs the nano editor on CentOS machines
 * In non-production environments, installs the htop process viewer
 * Records key identifiers about the associated Compute Resource and System Instance as Ansible local facts
+* In non-production environments, installs the `rsync` file transfer tool for uploading files
+* In non-production environments, installs the `nano` editor and additional language syntax highlighting files
 * If the BARC `postgresql9-server` role is applied, creates privileged roles for team members
 * If the BARC `postgresql9-client` role is applied, configures a `psql` configuration file for team members
 
