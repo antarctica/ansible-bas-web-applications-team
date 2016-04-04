@@ -1,0 +1,11 @@
+---
+# Installs and configures nano editor on non-production environments
+
+- name: install nano - CentOS
+  yum:
+             pkg={{ item }}
+    update_cache=yes
+           state=present
+  with_items:
+  - nano
+  when: ansible_distribution == "CentOS"

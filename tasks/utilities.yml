@@ -1,33 +1,9 @@
 ---
-# Installs common/useful utilities on non-production environments
+# Installs/configures common/useful utilities
 
-- name: install nano - CentOS
-  yum:
-             pkg={{ item }}
-    update_cache=yes
-           state=present
-  with_items:
-  - nano
-  when: ansible_distribution == "CentOS" and
-    ansible_local.bas_systems_inventory.system_instance.environment != "production"
+- include: utilities-htop.yml
+  when: ansible_local.bas_systems_inventory.system_instance.environment != "production"
 
-- name: install htop - CentOS
-  yum:
-             pkg={{ item }}
-    update_cache=yes
-           state=present
-  with_items:
-  - htop
-  when: ansible_distribution == "CentOS" and
-    ansible_local.bas_systems_inventory.system_instance.environment != "production"
 
-- name: install htop - Ubuntu
-  apt:
-                 pkg={{ item }}
-        update_cache=yes
-    cache_valid_time=3600
-               state=present
-  with_items:
-    - htop
-  when: ansible_distribution == "Ubuntu" and
-    ansible_local.bas_systems_inventory.system_instance.environment != "production"
+- include: utilities-nano.yml
+  when: ansible_local.bas_systems_inventory.system_instance.environment != "production"
