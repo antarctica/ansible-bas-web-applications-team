@@ -1,6 +1,13 @@
 ---
 # defaults file for bas-web-applications-team
 
+# generic variables
+web_application_team_usernames:
+  - dacon
+  - felnne
+  - robike
+  - jpro
+
 # system-users specific variables
 web_application_team_users:
   -

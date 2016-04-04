@@ -22,6 +22,8 @@ and [here](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt
 * In non-production environments, installs the nano editor on CentOS machines
 * In non-production environments, installs the htop process viewer
 * Records key identifiers about the associated Compute Resource and System Instance as Ansible local facts
+* If the BARC `postgresql9-server` role is applied, creates privileged roles for team members
+* If the BARC `postgresql9-client` role is applied, configures a `psql` configuration file for team members
 
 ## Dependencies
 
@@ -75,6 +77,13 @@ these extra tools/scripts are added by this role as a convenience - they aren't 
 Tags are not used in this role.
 
 ### Variables
+
+#### *web_application_team_usernames*
+
+* **MUST NOT** be specified
+* Specifies only the username of members of the Web & Applications Team
+* Useful for *with_items* where a task applies to all team members
+* The default value for this variable is a conventional default and **MUST NOT** be changed
 
 #### *web_application_team_users*
 

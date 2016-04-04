@@ -5,6 +5,10 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased][unreleased]
 
+### Added
+
+* Customisations for the `postgresql9-server` role, if applied, to create superusers for team members
+* Customisations for the `postgresql9-client` role, if applied, to customise `psql` client
 ## 0.1.2 - 25/02/2016
 
 ### Fixed

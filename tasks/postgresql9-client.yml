@@ -1,0 +1,10 @@
+---
+# Configures the PostgreSQL client with WebApps conventions
+
+- name: generate postgresql client configuration file for web apps users
+  template:
+      src=HOME/DOT-psqlrc.j2
+     dest="/home/{{ item }}/.psqlrc"
+    owner="{{ item }}"
+    group="{{ item }}"
+  with_items: "{{ web_application_team_usernames }}"

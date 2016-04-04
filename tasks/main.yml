@@ -2,3 +2,17 @@
 # tasks file for bas-web-applications-team
 
 - include: utilities.yml
+
+# Role specific tasks - apply only if each particular role has been applied to a system
+
+- include: postgresql9-server.yml
+  when: ansible_local.barc_postgresql9_server is defined
+    and ansible_local.barc_postgresql9_server.general is defined
+    and ansible_local.barc_postgresql9_server.general.role_applied is defined
+    and ansible_local.barc_postgresql9_server.general.role_applied == 'true'
+
+- include: postgresql9-client.yml
+  when: ansible_local.barc_postgresql9_client is defined
+    and ansible_local.barc_postgresql9_client.general is defined
+    and ansible_local.barc_postgresql9_client.general.role_applied is defined
+    and ansible_local.barc_postgresql9_client.general.role_applied == 'true'
