@@ -13,7 +13,7 @@ This role is made available publicly to ease distribution and under our commitme
 possible.
 
 BAS also produces a number of roles, which are intended to be generic, under the BAS Ansible Roles Collection (BARC).
-See [here](https://galaxy.ansible.com/BARC/) for available roles, 
+See [here](https://galaxy.ansible.com/bas-ansible-roles-collection/) for available roles, 
 and [here](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt) for a general overview and policies.
 
 ## Overview
