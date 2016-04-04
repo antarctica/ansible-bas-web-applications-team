@@ -18,12 +18,12 @@ and [here](https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt
 
 ## Overview
 
-* Creates privileged user accounts for Web & Application Team members, and Jeremy Robst from BAS ICT
-* In non-production environments, installs the htop process viewer
-* Records key identifiers about the associated Compute Resource and System Instance as Ansible local facts
 * Create a group for team members to allow permission sharing
+* Creates privileged user accounts for team members (Web & Application Team members, and Jeremy Robst from BAS ICT)
 * In non-production environments, installs the `rsync` file transfer tool for uploading files
 * In non-production environments, installs the `nano` editor and additional language syntax highlighting files
+* In non-production environments, installs the `htop` process viewer
+* Sets relevant Ansible local facts for the Compute Resource and System Instance from the BAS Systems Inventory
 * If the BARC `postgresql9-server` role is applied, creates privileged roles for team members
 * If the BARC `postgresql9-client` role is applied, configures a `psql` configuration file for team members
 

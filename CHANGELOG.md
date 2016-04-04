@@ -21,6 +21,7 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 ### Changed
 
 * Using consistent format for role dependencies
+* General README improvements
 * Refactoring 'utilities' tasks
 * Moved location of public keys to better fit with conventions used for *files* and *templates*
 * Primary group for team members set to *webapps* group, rather than individual groups
