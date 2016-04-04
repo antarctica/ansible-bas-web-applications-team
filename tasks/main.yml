@@ -1,6 +1,11 @@
 ---
 # tasks file for bas-web-applications-team
 
+# Ensure any Ansible local facts registered by tasks in the current playbook are loaded and can be tested
+- action: setup
+
+# General tasks
+
 - include: utilities.yml
 
 # Role specific tasks - apply only if each particular role has been applied to a system

@@ -12,6 +12,7 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 * Additional nano text editor syntax definitions
 * Dependency on `system-groups` role to create a *webapps* group for sharing common permissions to files
 * Rsync is now installed as a utility on CentOS to support copying nano syntax definitions
+* Comments to main task file
 
 ### Fixed
 
